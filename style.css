@@ -36,11 +36,6 @@ body {
     object-fit: contain;
     display: block;
     background: #5c0a20;
-    transition: transform 0.3s ease;
-}
-
-.portada-imagen:hover {
-    transform: scale(1.01);
 }
 
 .portada-texto {
@@ -82,11 +77,15 @@ body {
     visibility: visible;
 }
 
-/* FONDO con background.png */
+/* FONDO CON background2.jpg */
 .detalles-evento {
     padding: 30px 28px;
-    background: url('background.png') center/cover no-repeat;
+    background-image: url('background2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-attachment: local;
+    background-color: #faf6f0;
 }
 
 /* HEADER REVISTA */
@@ -127,7 +126,7 @@ body {
 }
 
 .hero-quince h2 span {
-    color: #d4af37;
+    color: #C9A03D;
 }
 
 .hero-quince .tagline {
@@ -251,7 +250,7 @@ body {
 }
 
 .dress-code span {
-    color: #d4af37;
+    color: #C9A03D;
     font-weight: 700;
 }
 
@@ -329,7 +328,7 @@ body {
     border-radius: 28px;
     text-align: center;
     margin: 30px 0;
-    border: 1px solid #d4af37;
+    border: 1px solid #C9A03D;
 }
 
 .btn-regalo {
@@ -433,7 +432,7 @@ body {
     width: 52px;
     height: 52px;
     background: #5c0a20;
-    color: #d4af37;
+    color: #C9A03D;
     border-radius: 50%;
     display: none;
     align-items: center;
@@ -441,7 +440,7 @@ body {
     cursor: pointer;
     z-index: 100;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    border: 1px solid #d4af37;
+    border: 1px solid #C9A03D;
     transition: 0.2s;
 }
 
@@ -458,7 +457,7 @@ body {
     font-size: 0.85rem;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE PARA MÓVILES */
 @media (max-width: 600px) {
     .portada-texto {
         font-size: 0.7rem;
@@ -482,5 +481,33 @@ body {
     
     .countdown-item .numero {
         font-size: 1.4rem;
+    }
+}
+
+/* RESPONSIVE PARA PC (pantallas grandes) */
+@media (min-width: 1200px) {
+    .invitacion-container {
+        max-width: 700px;
+    }
+    
+    .detalles-evento {
+        padding: 40px 35px;
+    }
+    
+    .hero-quince h2 {
+        font-size: 3.5rem;
+    }
+    
+    .quien-es p {
+        font-size: 1rem;
+    }
+    
+    .countdown-item {
+        min-width: 90px;
+        padding: 18px 12px;
+    }
+    
+    .countdown-item .numero {
+        font-size: 2.2rem;
     }
 }
